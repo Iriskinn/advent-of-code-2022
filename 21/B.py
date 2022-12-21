@@ -22,6 +22,10 @@ def solve(v, h):
     elif '/' in c:
         return a / b
 
+# make sure f(l) and f(r) have different signs
+print(solve('root', l), solve('root', 'r'))
+
+# the original root operation has to be replaced with a minus
 for i in range(1000):
     m = (l + r) / 2
     res = solve('root', m)
